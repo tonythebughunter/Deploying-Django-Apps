@@ -13,6 +13,8 @@ This guide helps you deploy a Django project using Apache and `mod_wsgi`.
 
 sudo cp -r /path/to/your/project /var/www/website
 Your project should now be located at:
+
+
         /var/www/website/
         ├── db.sqlite3
         ├── frontend/
