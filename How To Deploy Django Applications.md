@@ -1,10 +1,12 @@
 # Install required Packages
 sudo apt update
 sudo apt install apache2 libapache2-mod-wsgi-py3
-# Move your project directory to /var/www/your-website
+# Move your project files & directory to /var/www/
 sudo cp -r /path/to/your/project /var/www/your-website
 # Create a configuration file
-sudo nano /etc/apache2/sites-available/website.conf
+sudo nano /etc/apache2/sites-available/website.conf:
+
+
   <VirtualHost *:80>
     ServerName localhost
 
