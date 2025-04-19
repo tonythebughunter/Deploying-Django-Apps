@@ -54,8 +54,9 @@ Paste the following config:
 
 ## 🛠️ Step 5: Update Django Settings.py
 
-import os
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+        import os
+        
+        STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 ## 📦 Step 6: Collect Static Files
 
