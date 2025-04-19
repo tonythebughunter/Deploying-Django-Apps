@@ -24,7 +24,7 @@ Your project should now be located at:
 
 sudo nano /etc/apache2/sites-available/website.conf
 Paste the following config:
-<VirtualHost *:80>
+" <VirtualHost *:80>
     ServerName localhost
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/website/
@@ -43,7 +43,7 @@ Paste the following config:
     WSGIDaemonProcess website python-path=/var/www/website
     WSGIProcessGroup website
     WSGIScriptAlias / /var/www/website/webapp/wsgi.py
-</VirtualHost>
+</VirtualHost>"
 
 ## ✅ Step 4: Enable the Site
 
