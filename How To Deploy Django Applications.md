@@ -5,29 +5,26 @@ sudo apt install apache2 libapache2-mod-wsgi-py3
 sudo cp -r /path/to/your/project /var/www/your-website
 # Create a configuration file
 sudo nano /etc/apache2/sites-available/website.conf:
-
-
   <VirtualHost *:80>
     ServerName localhost
-
     ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/your-website/
+    DocumentRoot /var/www/website/
 
-    Alias /static /var/www/your-website/static
-    <Directory /var/www/your-website/webapp/static>
+    Alias /static /var/www/website/static
+    <Directory /var/www/website/static>
         Require all granted
     </Directory>
 
-    <Directory /var/www/your-website/webapp>
+    <Directory /var/www/website/webapp>
         <Files wsgi.py>
             Require all granted
         </Files>
     </Directory>
 
-    WSGIDaemonProcess website python-path=/var/www/your-website
+    WSGIDaemonProcess website python-path=/var/www/website
     WSGIProcessGroup website
-    WSGIScriptAlias / /var/www/your-website/webapp/wsgi.py
-</VirtualHost>
+    WSGIScriptAlias / /var/www/website/webapp/wsgi.py
+  </VirtualHost>
 
 
 sample of what is in /var/www/your-website:   db.sqlite3  frontend  manage.py  static  webapp. webapp is where settings are
