@@ -13,12 +13,12 @@ sudo apt install apache2 libapache2-mod-wsgi-py3
 
 sudo cp -r /path/to/your/project /var/www/website
 Your project should now be located at:
-        /var/www/website/
-        ├── db.sqlite3
-        ├── frontend/
-        ├── manage.py
-        ├── static/
-        └── webapp/         ← contains settings.py, wsgi.py
+                        /var/www/website/
+                        ├── db.sqlite3
+                        ├── frontend/
+                        ├── manage.py
+                        ├── static/
+                        └── webapp/         ← contains settings.py, wsgi.py
 
 ## ⚙️ Step 3: Create Apache Configuration File
 
