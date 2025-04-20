@@ -37,7 +37,7 @@ Paste the following config:
                 Require all granted
             </Directory>
         
-            <Directory /var/www/website/webapp>
+            <Directory /var/www/website/website>
                 <Files wsgi.py>
                     Require all granted
                 </Files>
@@ -45,7 +45,7 @@ Paste the following config:
         
             WSGIDaemonProcess website python-path=/var/www/website
             WSGIProcessGroup website
-            WSGIScriptAlias / /var/www/website/webapp/wsgi.py
+            WSGIScriptAlias / /var/www/website/website/wsgi.py
         </VirtualHost>
 
 ## ✅ Step 4: Enable the Site
